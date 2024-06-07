@@ -7,6 +7,7 @@ import UseRef from "../hooks/useRef/UseRef";
 import UseRef2 from "../hooks/useRef/UseRef2";
 import UseRef3 from "../hooks/useRef/UseRef3";
 import ParentUseMemo from "../hooks/useMemo/ParentUseMemo";
+import UseCallback from "../hooks/useCallback/UseCallback";
 
 export const AppRouter = () => {
     return (
@@ -18,6 +19,7 @@ export const AppRouter = () => {
             <Route path="/useRef2" element={<UseRef2/>}/>
             <Route path="/useRef3" element={<UseRef3/>}/>
             <Route path="/useMemo" element={<ParentUseMemo/>}/>
+            <Route path="/useCallback" element={<UseCallback/>}/>
         </Routes>
     );
 }
