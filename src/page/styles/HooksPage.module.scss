@@ -1,0 +1,11 @@
+.hook-wrapper{
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(165px, auto)); // 5개의 그리드 컬럼으로 설정
+  gap: 8px;
+  justify-content: center;
+
+  &__button{
+
+  }
+}

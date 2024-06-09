@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button as MuiButton, ButtonProps as MuiButtonProps } from '@mui/material';
 import PropTypes from 'prop-types';
-import style from '../styles/Button.module.scss';
+import style from './styles/Button.module.scss';
+import classNames from "classnames";
 
 export interface ButtonProps extends MuiButtonProps {
     id?: string;
@@ -18,7 +19,7 @@ const Button = ({ id, className, variant, children, onClick, onMouseOver, size, 
         <MuiButton
             id={id}
             aria-label="Button label"
-            className={`${style.button}`}
+            className={classNames(className,`${style.button}`)}
             variant={variant}
             onClick={onClick}
             onMouseOver={onMouseOver}

@@ -10,11 +10,15 @@ import ParentUseMemo from "../hooks/useMemo/ParentUseMemo";
 import UseCallback from "../hooks/useCallback/UseCallback";
 import HooksPage from "../page/HooksPage";
 import MainPage from "../page/MainPage";
+import ReactMemo from "../components/memo/ReactMemo";
+import ComponentsPage from "../page/ComponentsPage";
+import ParentContext from "../hooks/useContext/ParentContext";
 
 export const AppRouter = () => {
     return (
         <Routes>
             <Route path="/" element={<MainPage/>}/>
+            {/*hook라우터*/}
             <Route path="/hooks" element={<HooksPage/>}/>
             <Route path="/hooks/useState" element={<UseState/>}/>
             <Route path="/hooks/useEffect" element={<UseEffect/>}/>
@@ -24,6 +28,10 @@ export const AppRouter = () => {
             <Route path="/hooks/useRef3" element={<UseRef3/>}/>
             <Route path="/hooks/useMemo" element={<ParentUseMemo/>}/>
             <Route path="/hooks/useCallback" element={<UseCallback/>}/>
+            <Route path="/hooks/useContext" element={<ParentContext/>}/>
+            {/*리액트 컴포넌트*/}
+            <Route path="/components" element={<ComponentsPage/>}/>
+            <Route path="/components/reactMemo" element={<ReactMemo/>}/>
         </Routes>
     );
 }

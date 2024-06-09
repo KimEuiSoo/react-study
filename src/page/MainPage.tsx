@@ -6,13 +6,14 @@ import {useNavigate} from "react-router-dom";
 const MainPage = () => {
     const navigate = useNavigate();
 
-    const navigateToHooks = () => {
-        navigate("/hooks")
+    const navigateToPage = (page: string) => {
+        navigate(`${page}`);
     }
 
     return (
         <Box>
-            <Button onClick={navigateToHooks}>{`Hook 페이지 이동`}</Button>
+            <Button onClick={()=>navigateToPage("/hooks")}>{`Hook 페이지 이동`}</Button>
+            <Button onClick={()=>navigateToPage("/components")}>{`Components 페이지 이동`}</Button>
         </Box>
     )
 }

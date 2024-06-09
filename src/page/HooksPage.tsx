@@ -2,6 +2,7 @@ import React from "react";
 import {Box} from "@mui/material";
 import Button from "../components/atoms/button/Button";
 import { useNavigate } from "react-router-dom";
+import styles from './styles/HooksPage.module.scss'
 
 const HooksPage = () => {
     const navigate = useNavigate();
@@ -11,7 +12,7 @@ const HooksPage = () => {
     }
 
     return (
-        <Box>
+        <Box className={styles['hook-wrapper']}>
             <Button onClick={()=>NavigateToHooks&&NavigateToHooks('useState')}>{`UseState`}</Button>
             <Button onClick={()=>NavigateToHooks&&NavigateToHooks('useEffect')}>{`UseEffect`}</Button>
             <Button onClick={()=>NavigateToHooks&&NavigateToHooks('useEffectDeps')}>{`UseEffectDeps`}</Button>
@@ -20,6 +21,7 @@ const HooksPage = () => {
             <Button onClick={()=>NavigateToHooks&&NavigateToHooks('useRef3')}>{`UseRef3`}</Button>
             <Button onClick={()=>NavigateToHooks&&NavigateToHooks('useMemo')}>{`ParentUseMemo`}</Button>
             <Button onClick={()=>NavigateToHooks&&NavigateToHooks('useCallback')}>{`UseCallback`}</Button>
+            <Button onClick={()=>NavigateToHooks&&NavigateToHooks('useContext')}>{`UseContext`}</Button>
         </Box>
     )
 }
