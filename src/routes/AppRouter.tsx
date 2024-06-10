@@ -13,6 +13,8 @@ import MainPage from "../page/MainPage";
 import ReactMemo from "../components/memo/ReactMemo";
 import ComponentsPage from "../page/ComponentsPage";
 import ParentContext from "../hooks/useContext/ParentContext";
+import CustomAxiosPage from "../page/CustomAxiosPage";
+import RestApiPage from "../page/RestApiPage";
 
 export const AppRouter = () => {
     return (
@@ -32,6 +34,9 @@ export const AppRouter = () => {
             {/*리액트 컴포넌트*/}
             <Route path="/components" element={<ComponentsPage/>}/>
             <Route path="/components/reactMemo" element={<ReactMemo/>}/>
+            {/*api 컴포넌트 */}
+            <Route path="/api" element={<RestApiPage/>}/>
+            <Route path="/customApi" element={<CustomAxiosPage/>}/>
         </Routes>
     );
 }
