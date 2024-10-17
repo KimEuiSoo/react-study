@@ -22,6 +22,7 @@ const HooksPage = () => {
             <Button onClick={()=>NavigateToHooks&&NavigateToHooks('useMemo')}>{`ParentUseMemo`}</Button>
             <Button onClick={()=>NavigateToHooks&&NavigateToHooks('useCallback')}>{`UseCallback`}</Button>
             <Button onClick={()=>NavigateToHooks&&NavigateToHooks('useContext')}>{`UseContext`}</Button>
+            <Button onClick={()=>NavigateToHooks&&NavigateToHooks('useReducer')}>{`UseReducer`}</Button>
         </Box>
     )
 }
