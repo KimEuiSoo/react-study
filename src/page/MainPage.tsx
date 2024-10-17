@@ -16,6 +16,7 @@ const MainPage = () => {
             <Button onClick={()=>navigateToPage("/components")}>{`Components 페이지 이동`}</Button>
             <Button onClick={()=>navigateToPage("/api")}>{`REST API 페이지 이동`}</Button>
             <Button onClick={()=>navigateToPage("/customApi")}>{`Custom API 페이지 이동`}</Button>
+            <Button onClick={()=>navigateToPage("/apollo")}>{`Apollo 페이지 이동`}</Button>
         </Box>
     )
 }

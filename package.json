@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.11.8",
     "@apollo/react-hooks": "^4.0.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -25,7 +26,7 @@
     "classnames": "^2.5.1",
     "dayjs": "^1.11.7",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "graphql": "^16.6.0",
+    "graphql": "^16.9.0",
     "prettier": "^2.8.2",
     "qs": "^6.11.1",
     "react": "^18.2.0",

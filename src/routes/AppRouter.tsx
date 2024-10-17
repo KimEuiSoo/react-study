@@ -16,6 +16,7 @@ import ParentContext from "../hooks/useContext/ParentContext";
 import CustomAxiosPage from "../page/CustomAxiosPage";
 import RestApiPage from "../page/RestApiPage";
 import UseReducer from "../hooks/useReducer/UseReducer";
+import ApolloPage from "../page/ApolloPage";
 
 export const AppRouter = () => {
     return (
@@ -32,13 +33,14 @@ export const AppRouter = () => {
             <Route path="/hooks/useMemo" element={<ParentUseMemo/>}/>
             <Route path="/hooks/useCallback" element={<UseCallback/>}/>
             <Route path="/hooks/useContext" element={<ParentContext/>}/>
-            <Route path="hooks/useReducer" element={<UseReducer/>}/>
-                {/*리액트 컴포넌트*/}
+            <Route path="/hooks/useReducer" element={<UseReducer/>}/>
+            {/*리액트 컴포넌트*/}
             <Route path="/components" element={<ComponentsPage/>}/>
             <Route path="/components/reactMemo" element={<ReactMemo/>}/>
             {/*api 컴포넌트 */}
             <Route path="/api" element={<RestApiPage/>}/>
             <Route path="/customApi" element={<CustomAxiosPage/>}/>
+            <Route path="/apollo" element={<ApolloPage/>}/>
         </Routes>
     );
 }
